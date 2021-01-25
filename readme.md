@@ -11,7 +11,7 @@ HTML,
 CSS,
 Javascript,
 Node.js, 
-Nunjucks,
+Nunjucks.
 </h5>
 <br/>
 <br/>
