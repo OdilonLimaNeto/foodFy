@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* CONTAINER HEADER */
+.container-initial {
+  margin: 0 auto;
+  width: 100%;
+  width: 940px;
+  margin-top: 36.1px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+}
+
+.container-initial img {
+  margin-right: 122.4px;
+}
+
+.container-initial a {
+  margin-right: 30px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+/* FINAL CONTAINER HEADER */
+
+/* BANNER  */
+.banner {
+  height: 366px;
+  width: 940px;
+  background-color: #fbdfdb;
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0 auto;
+  max-width: 940px;
+
+  margin-bottom: 50px;
+}
+
+.banner-text {
+  justify-self: center;
+  align-self: center;
+}
+
+.banner-text h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 5px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-image {
+  justify-self: center;
+  align-self: flex-end;
+}
+/* FINAL BANNER */
+
+/* MOST ACESSED TEXT */
+.most-acessed-text h3 {
+  margin: 0 auto;
+  max-width: 940px;
+
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+/* FINAL MOST ACESSED TEXT */
+
+/* CARD CONTAINER */
+.most-acessed {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  padding-bottom: 50px;
+}
+
+.most-acessed .card-container .card-name p {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #111111;
+
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.most-acessed .card-container .card-author p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+
+.most-acessed .card-container .card-image img {
+  max-width: 300px;
+  max-height: 140px;
+
+  border-radius: 15px;
+  line-height: 21px;
+}
+/* FINAL CARD CONTAINER */
+
+/* FOOTER CONTAINER */
+/* footer {
+
+  margin-top: auto;
+  background-color: #eeeeee;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  padding: 23px;
+  text-align: center;
+} */
+/* FINAL FOOTER CONTAINER */
+
+/* PAGE ABOUT INITIAL */
+.information-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 940px;
+}
+
+.information-container .about .foodfy {
+  font-size: 24px;
+  color: #111111;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.information-container h1 {
+  font-size: 20px;
+  color: #111111;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.information-container p {
+  max-width: 940px;
+  max-height: 280px;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  font-weight: 400;
+}
+/* PAGE ABOUT FINAL */
+
+/* PAGE RECIPES INITIAL */
+.recipes {
+  margin: 20px auto;
+  max-width: 940px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes .card-container .card-name p {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #111111;
+
+  padding-top: 20px;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+}
+
+.recipes .card-container .card-author p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+  cursor: pointer;
+
+}
+
+.recipes .card-container .card-image img {
+  max-width: 300px;
+  max-height: 140px;
+
+  border-radius: 15px;
+  line-height: 21px;
+  cursor: pointer;
+}
+/* PAGE RECIPES FINAL */
+
+/* PAGE RECIPE INITIAL */
+.recipe-information-container {
+  margin: 0 auto;
+
+  max-width: 940px;
+
+  padding-bottom: 50px;
+
+  text-align: center;
+
+}
+
+.recipe-information-container .recipe-image {
+  width: 100%;
+
+  max-width: 940px;
+  max-height: 280px;
+
+  border-radius: 15px;
+
+}
+
+.recipe-information-container .title-recipe {
+  padding-top: 50px;
+  padding-bottom: 4px;
+
+  font-weight: bold;
+
+  font-size: 36px;
+
+  line-height: 42px;
+}
+
+.recipe-information-container .author {
+  color: #777777;
+  
+  font-size: 20px;
+
+  line-height: 24px;
+}
+
+#ingredients-section {
+  margin: 0px auto;
+  max-width: 940px;
+
+}
+
+.section-title {
+  display: flex;
+}
+
+
+.section-title h3 {
+  font-size: 24px;
+  color: #111111;
+
+  line-height: 28px;
+
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title h4 {
+  background: white;
+
+  font-size: 12px;
+  color: #999999;
+
+  font-weight: bold;
+
+  line-height: 14px;
+
+  cursor: pointer;
+
+  padding: 10px;
+  
+}
+
+.details-ingredients {
+  text-align: start;
+  font-weight: 400;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  padding-bottom: 39px;
+  opacity: 1;
+}
+.details-ingredients.ocult {
+  opacity: 0;
+  height: 0px;
+}
+
+.details-ingredients li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+
+
+
+
+
+
+/* PAGE RECIPE FINAL */
