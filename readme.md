@@ -1,4 +1,4 @@
-<h2>Projeto de estudo baseado no bootcamp Rocketseat - Launchbase.</h2>
+<h2>Projeto de estudo baseado no bootcamp Rocketseat - Launchbase.</h2
 
 <h5>Módulo "Iniciando no Back-end" finalizado.</h5>
 
