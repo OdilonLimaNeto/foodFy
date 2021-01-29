@@ -1,3 +1,4 @@
+<img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/OdilonLimaNeto/foodFy" />   <img alt="GitHub Package.json Version" src="https://img.shields.io/github/package-json/v/OdilonLimaNeto/foodFy" />   <img alt="" src="https://img.shields.io/github/repo-size/OdilonLimaNeto/foodFy" />
 <h2>Projeto de estudo baseado no bootcamp Rocketseat - Launchbase.</h2
 
 <h5>Módulo "Iniciando no Back-end" finalizado.</h5>
