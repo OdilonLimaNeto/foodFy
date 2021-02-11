@@ -1,3 +1,13 @@
+// HEADER ACTIVE
+const paginaAtual = location.pathname;
+const items = document.querySelectorAll('header .container-initial a');
+
+for (let item of items) {
+    if (paginaAtual.includes(item.getAttribute('href'))) {
+        item.classList.add('active');
+    }
+}
+
 const recipes = document.querySelectorAll('.card-container');
 
 for(let i = 0; i < recipes.length; i++) {
@@ -31,4 +41,5 @@ for(const button in buttons) {
     }
   })
 }
+
 
