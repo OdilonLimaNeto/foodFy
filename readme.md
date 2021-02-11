@@ -4,7 +4,9 @@
 
 <h2>Projeto de estudo baseado no bootcamp Rocketseat - Launchbase.</h2>
 
-<h5>Módulo "Iniciando no Back-end" finalizado.</h5>
+<h3 align="center">
+  Desafio: Administração do Foodfy
+</h3>
 
 <br/>
 <br/>
