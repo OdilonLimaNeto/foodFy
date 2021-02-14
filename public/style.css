@@ -66,7 +66,6 @@ body {
   max-width: 940px;
 
   margin-bottom: 50px;
-  transition: 300ms;
   animation: up 1200ms ease-out 100ms;
 
 }
@@ -137,7 +136,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  animation: up 1200ms ease-out 100ms;
 }
 
 .most-acessed .card-container .card-name p {
@@ -146,14 +146,18 @@ body {
 
   color: #111111;
 
-  padding-top: 20px;
-  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+
 }
 
 .most-acessed .card-container .card-author p {
   font-weight: 400;
   font-size: 14px;
   color: #777777;
+  cursor: pointer;
+
 }
 
 .most-acessed .card-container .card-image img {
@@ -162,6 +166,19 @@ body {
 
   border-radius: 15px;
   line-height: 21px;
+
+}
+
+.most-acessed .card-container .card-image img:hover {
+  transition: 400ms;
+
+  max-width: 315px;
+
+  cursor: pointer;
+
+  -webkit-box-shadow: 10px 11px 10px 0px rgba(255,123,113,0.4);
+  -moz-box-shadow: 10px 11px 10px 0px rgba(255,123,113,0.4);
+  box-shadow: 10px 11px 10px 0px rgba(255,123,113,0.4);
 }
 /* FINAL CARD CONTAINER */
 
