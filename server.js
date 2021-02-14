@@ -1,13 +1,13 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-
-const database = require('./data');
+const routes = require('./routes')
 
 const server = express();
 
 //Mapeando pasta public e past assets
 server.use(express.static('public'));
 server.use(express.static('assets'));
+server.use(routes);
 
 //definindo tipo de arquivo a ser lido pelo nunjucks (html)
 server.set('view engine', 'njk'); 
@@ -18,28 +18,6 @@ nunjucks.configure('views', {
     noCache: true
 });
 
-server.get('/', (request, response) => {
-    return response.render('home', { items: database });
-})
-
-server.get('/recipes', (request, response) => {
-    return response.render('recipes', { items: database });
-    // passando dados do back para o front
-});
-
-server.get("/recipe/:index", (request, response) => {
-    const recipeIndex = request.params.index;
-    const recipe = database;
-
-    if (!recipe[recipeIndex]) {
-        return response.send('Pagina não encontrada')
-    }
-    return response.render('recipe', { item: recipe[recipeIndex] })
-})
-
-server.get('/about', (request, response) => {
-    return response.render('about');
-});
 
 server.listen(5000, () => {
     console.log('Server is running: PORT 5000');
