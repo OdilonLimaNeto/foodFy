@@ -17,10 +17,13 @@ html {
 
 body {
   min-height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
 }
 
 /* CONTAINER HEADER */
-.container-initial {
+.container-initial, .header, .topic {
   margin: 0 auto;
   width: 100%;
   width: 940px;
@@ -44,6 +47,8 @@ body {
   margin-right: 122.4px;
 }
 
+
+
 .container-initial a {
   margin-right: 30px;
   font-size: 16px;
@@ -55,7 +60,7 @@ body {
 /* BANNER  */
 .banner {
   height: 366px;
-  width: 940px;
+  max-width: 940px;
   background-color: #fbdfdb;
   border-radius: 30px;
 
@@ -372,11 +377,99 @@ footer p {
   list-style-type: disc;
   list-style-position: inside;
 }
-
-
-
-
-
-
-
 /* PAGE RECIPE FINAL */
+
+
+
+/* ADMINISTRATOR - INDEX -- INICIO*/
+.header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.black {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: black;
+
+  height: 80px;
+}
+
+.header img {
+  width: 90.6px;
+  height: 26.9px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.container-initial .card img {
+  margin-right: 20px;
+}
+
+.topic {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  line-height: 28px;
+}
+
+.card img {
+  width: 172px;
+  height: 80px;
+
+  border-radius: 8.57px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  
+  line-height: 21px;
+
+  margin-bottom: 5px;
+
+  min-width: 249px;
+
+}
+
+.author {
+  margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 14px;
+   
+   color: #777777;
+
+   line-height: 16px;
+  
+}
+
+.content a {
+  color: #6558C3;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 39px;
+
+}
+
+
+/* ADMINISTRATOR - INDEX -- FIM */
+
+

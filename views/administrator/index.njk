@@ -1,0 +1,80 @@
+{% extends "layout.njk" %}
+{% block title %}
+        <title>Receitas do Foodfy</title>
+{% endblock title %}
+
+{% block content %}
+{% block headerLinks %}
+{% endblock headerLinks %}
+        <div class="black">
+            <div class="header">
+                <img src="/logo2.png" alt="logo">
+            </div>
+        </div>
+
+        <div class="topic"> Gerenciar receitas</div>
+        
+        <section class="container-initial">
+            <div class="cards">
+                <div class="card">
+                    <img src="/burger.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Triplo bacon burger</p>
+                        <p class="author">por Jorge Relato</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/pizza.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Pizza 4 estações</p>
+                        <p class="author">por Fabiana Melo</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/lasanha.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Lasanha mac n' cheese</p>
+                        <p class="author">por Juliano Vieira</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/doce.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Docinhos pão-do-céu</p>
+                        <p class="author">por Ricardo Golveia</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/asinhas.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Asinhas de frango ao barbecue</p>
+                        <p class="author">por Vania Steroski</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/espaguete.png" alt="burger">
+                    <div class="content">
+                        <p class="title">Espaguete ao alho</p>
+                        <p class="author">por Júlia Kinoto</p>
+                        <a href="#">Visualizar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {# <footer>
+            <p>Todos direitos reservados, receitas Foodfy.</p>
+        </footer> #}
+
+        <script src="/scripts.js"></script>
+{% endblock content %}

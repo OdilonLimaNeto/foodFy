@@ -8,11 +8,15 @@
 
     <body>
         <header>
-            <div class="container-initial">
-                <a href="/"><img src="/logo.png"></a>
+            {% block headerLinks %}
+                <div class="container-initial">
+                <a href="/"><img src="/logo1.png"></a>
                 <a href="/about">Sobre</a>
                 <a href="/recipes">Receitas</a>
             </div>
+            {% endblock headerLinks %}
+            
+
         </header>
 
         {% block content %}{% endblock content %}
