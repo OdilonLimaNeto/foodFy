@@ -18,7 +18,7 @@ routes.get('/about', recipe.about);
 // // ROTAS ADMINISTRADOR
 routes.get("/admin/recipes", administrator.index); // Mostrar a lista de receitas
 // routes.get("/admin/recipes/create", administrator.create); // Mostrar formulário de nova receita
-// routes.get("/admin/recipes/:id", administrator.show); // Exibir detalhes de uma receita
+routes.get("/admin/recipes/:index", administrator.show); // Exibir detalhes de uma receita
 // routes.get("/admin/recipes/:id/edit", administrator.edit); // Mostrar formulário de edição de receita
 
 // routes.post("/admin/recipes", administrator.post); // Cadastrar nova receita

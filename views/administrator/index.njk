@@ -16,59 +16,16 @@
         
         <section class="container-initial">
             <div class="cards">
-                <div class="card">
-                    <img src="/burger.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Triplo bacon burger</p>
-                        <p class="author">por Jorge Relato</p>
-                        <a href="#">Visualizar</a>
+                {% for item in items %}
+                    <div class="card">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                        <div class="content">
+                            <p class="title">{{item.title}}</p>
+                            <p class="author">{{item.author}}</p>
+                            <a href="#">Visualizar</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="/pizza.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Pizza 4 estações</p>
-                        <p class="author">por Fabiana Melo</p>
-                        <a href="#">Visualizar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/lasanha.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Lasanha mac n' cheese</p>
-                        <p class="author">por Juliano Vieira</p>
-                        <a href="#">Visualizar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/doce.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Docinhos pão-do-céu</p>
-                        <p class="author">por Ricardo Golveia</p>
-                        <a href="#">Visualizar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/asinhas.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Asinhas de frango ao barbecue</p>
-                        <p class="author">por Vania Steroski</p>
-                        <a href="#">Visualizar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/espaguete.png" alt="burger">
-                    <div class="content">
-                        <p class="title">Espaguete ao alho</p>
-                        <p class="author">por Júlia Kinoto</p>
-                        <a href="#">Visualizar</a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
 
