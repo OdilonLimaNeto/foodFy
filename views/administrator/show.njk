@@ -4,6 +4,19 @@
 {% endblock title %}
 
 {% block content %}
+{% block headerLinks %}
+{% endblock headerLinks %}
+        <div class="black">
+            <div class="header">
+                <img src="/logo2.png" alt="logo">
+            </div>
+        </div>
+
+        <div class="topic"> 
+            <h1>Receita: {{item.title}}</h1>
+            <a href="#" class="editRecipe">Editar receita</a>
+        </div>
+
         <div class="recipe-information-container">
             <img class="recipe-image" src="{{item.image}}" alt="imagem de {{item.title}}">
             <h1 class="title-recipe">{{item.title}}</h1>

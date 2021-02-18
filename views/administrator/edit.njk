@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+{% block title %}
+        <title>Receita Foodfy</title>
+{% endblock title %}
+
+{% block content %}
+{% block headerLinks %}
+{% endblock headerLinks %}
+        <div class="black">
+            <div class="header">
+                <img src="/logo2.png" alt="logo">
+            </div>
+        </div>
+
+        <div class="topic"> 
+            <div class="container-options">
+                <h1>Editando receita</h1>
+                <a href="" class="deletetRecipe">Deletar</a>
+                <a href="" class="editRecipe">Salvar receita</a>
+            </div>
+        </div>
+
+        {% include "administrator/fields.njk" %}
+
+
+<script src="/scripts.js"></script>
+{% endblock content %}

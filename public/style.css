@@ -23,7 +23,7 @@ body {
 }
 
 /* CONTAINER HEADER */
-.container-initial, .header, .topic {
+.container-initial, .header {
   margin: 0 auto;
   width: 100%;
   width: 940px;
@@ -176,8 +176,6 @@ body {
 
 .most-acessed .card-container .card-image img:hover {
   transition: 400ms;
-
-  max-width: 315px;
 
   cursor: pointer;
 
@@ -414,8 +412,19 @@ footer p {
 }
 
 .topic {
-  margin-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  width: 940px;
+
+  margin-top: 55px;
   margin-bottom: 30px;
+
+}
+
+.topic h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-size: 24px;
   font-weight: bold;
@@ -468,8 +477,125 @@ footer p {
   column-gap: 39px;
 
 }
-
-
 /* ADMINISTRATOR - INDEX -- FIM */
+
+
+
+/* ADMINISTRATOR - SHOW - EDIT  -- INICIO */
+.editRecipe, .deletetRecipe {
+
+  display: flex;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  
+  line-height: 19px;
+
+  width: 136px;
+  height: 37px;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.topic a {
+  background-color: #DC4747;
+  margin-right: 10px;
+  margin-left: 470px;
+}
+
+.topic a + a {
+  background-color: #6558C3;
+  margin-left: 0px;
+
+  
+}
+
+.container-options {
+  display: flex;
+}
+
+.card-fields {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+}
+
+
+
+.title-fields h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  line-height: 19px;
+}
+
+.add-preparation, .add-ingredient {
+  font-weight: bold;
+  font-size: 16px;
+  
+  color: #6558C3;
+
+  cursor: pointer;
+
+  background: none;
+
+
+
+}
+
+input, textarea {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border: 1px solid #DDDDDD;
+  width: 100%;
+  height: 49px;
+
+  outline: none;
+  font-size: 16px;
+
+  color: #111111;
+  line-height: 19px;
+  font-weight: 400;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+button[type="button"] {
+  margin-top: 15px;
+}
+
+input[type="text"] {
+}
+
+.image-input input[type="url"],
+.ingredient-input input[type="text"],
+.preparation-input input[type="text"],
+.information-input input[type="text"] {
+  margin-top: 10px;
+}
+
+.title-fields {
+  margin-top: 30px;
+}
+
+.information-input textarea[type="text"] {
+  margin-top: 10px;
+  max-height: 257px;
+  min-height: 257px;
+  max-width: 940px;
+  min-width: 940px;
+  padding-top: 18px;
+  padding-bottom: 18px
+}
+
+/* ADMINISTRATOR - SHOW - EDIT  -- FIM */
 
 
