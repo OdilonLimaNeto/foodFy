@@ -16,5 +16,10 @@ exports.show = (request, response) => {
 };
 
 exports.edit = (request, response) => {
-    return response.render('administrator/edit', { item: database});
+    return response.render('administrator/edit', { item: database });
 };
+
+exports.create = (request, response) => {
+    return response.render('administrator/create')
+};
+

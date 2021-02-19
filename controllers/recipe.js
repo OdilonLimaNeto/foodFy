@@ -6,11 +6,11 @@ exports.redirect = (request, response) => {
 }
 
 exports.index = (request, response) => {
-    return response.render('home', { items: database });
+    return response.render('indexPage/home', { items: database });
 };
 
 exports.listRecipes = (request, response) => {
-    return response.render('recipes', { items: database });
+    return response.render('indexPage/recipes', { items: database });
 }
 
 exports.showRecipe = (request, response) => {
@@ -20,10 +20,10 @@ exports.showRecipe = (request, response) => {
     if (!recipe[recipeIndex]) {
         return response.send('Pagina não encontrada')
     }
-    return response.render('recipe', { item: recipe[recipeIndex] })
+    return response.render('indexPage/recipe', { item: recipe[recipeIndex] })
 };
 
 exports.about = (request, response) => {
-    return response.render('about');
+    return response.render('indexPage/about');
 };
 

@@ -411,7 +411,7 @@ footer p {
   margin-right: 20px;
 }
 
-.topic {
+.topic, .create {
   margin: 0 auto;
   width: 100%;
   width: 940px;
@@ -419,9 +419,13 @@ footer p {
   margin-top: 55px;
   margin-bottom: 30px;
 
+  display: flex;
+  justify-content: space-between;
+
+
 }
 
-.topic h1 {
+.topic h1, .create h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,21 +504,56 @@ footer p {
   justify-content: center;
 }
 
-.topic a {
-  background-color: #DC4747;
-  margin-right: 10px;
-  margin-left: 470px;
+.buttons-edit {
+  display: flex;
+
 }
 
-.topic a + a {
+.option a:nth-child(1){
   background-color: #6558C3;
-  margin-left: 0px;
+}
 
+.buttons-edit a:nth-child(1){
+  background-color: #DC4747;
+  margin-right: 10px;
+}
+
+.buttons-edit a:nth-child(2){
+  background-color: #6558C3;
+}
+
+.saveRecipe {
+  
+  display: flex;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  
+  line-height: 19px;
+
+  width: 136px;
+  height: 37px;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.create a {
+  display: flex;
+  background-color: #6558C3;
   
 }
 
 .container-options {
   display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-fields {
@@ -541,9 +580,6 @@ footer p {
   cursor: pointer;
 
   background: none;
-
-
-
 }
 
 input, textarea {
@@ -593,7 +629,6 @@ button[type="button"] {
   padding-top: 18px;
   padding-bottom: 18px
 }
-
 /* ADMINISTRATOR - SHOW - EDIT  -- FIM */
 
 
