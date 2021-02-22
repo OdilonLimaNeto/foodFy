@@ -8,17 +8,6 @@ for (let item of items) {
     }
 }
 
-//
-
-const recipes = document.querySelectorAll('.card-container');
-for(let i = 0; i < recipes.length; i++) {
-  const recipe = recipes[i];
-  recipe.addEventListener('click', () => {
-    window.location.href = `/recipe/${i}`
-  })
-}
-
-
 const buttons = document.querySelectorAll('h4');
 const detailsIngredients = document.querySelectorAll('.details-ingredients');
 
@@ -40,18 +29,6 @@ for(const button in buttons) {
     else{
       detailsIngredients[button].classList.add('ocult');
     }
-  })
-}
-
-
-
-// ADMINISTRATOR RECIPE
-
-const recipes = document.querySelectorAll('.card-container');
-for(let i = 0; i < recipes.length; i++) {
-  const recipe = recipes[i];
-  recipe.addEventListener('click', () => {
-    window.location.href = `/admin/recipes/${i}`
   })
 }
 
