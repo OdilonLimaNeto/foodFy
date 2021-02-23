@@ -6,6 +6,7 @@
 {% block content %}
 {% block headerLinks %}
 {% endblock headerLinks %}
+    <form method="POST" action="/admin/recipes">
         <div class="black">
             <div class="header">
                 <img src="/logo2.png" alt="logo">
@@ -15,9 +16,12 @@
         <div class="create">
             <h1>Criando receita</h1>
             <div class="option">
-                <a href="/admin/recipes" class="saveRecipe">Salvar receita</a>
+                <button type="submit" class="saveRecipe">Salvar receita</button>
             </div>
         </div>
-
         {% include "administrator/fields.njk" %}
+    </form>
+
+    {# PAREI AQUI #}
+
 {% endblock content %}

@@ -512,7 +512,7 @@ footer p {
 
 }
 
-.option a:nth-child(1){
+.option button:nth-child(1){
   background-color: #6558C3;
 }
 
@@ -541,6 +541,8 @@ footer p {
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  cursor: pointer;
 }
 
 .create a {

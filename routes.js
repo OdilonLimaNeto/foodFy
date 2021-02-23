@@ -21,7 +21,7 @@ routes.get("/admin/recipes/create", administrator.create); // Mostrar formulári
 routes.get("/admin/recipes/:index", administrator.show); // Exibir detalhes de uma receita
 routes.get("/admin/recipes/:id/edit", administrator.edit); // Mostrar formulário de edição de receita
 
-// routes.post("/admin/recipes", administrator.post); // Cadastrar nova receita
+routes.post("/admin/recipes", administrator.post); // Cadastrar nova receita
 // routes.put("/admin/recipes", administrator.put); // Editar uma receita
 // routes.delete("/admin/recipes", administrator.delete); // Deletar uma receita
 

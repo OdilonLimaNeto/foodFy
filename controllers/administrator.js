@@ -23,3 +23,7 @@ exports.create = (request, response) => {
     return response.render('administrator/create')
 };
 
+exports.post = (request, response) => {
+    return response.send('recebido');
+};
+// PAREI AQUI
